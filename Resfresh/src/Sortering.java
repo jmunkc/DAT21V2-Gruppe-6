@@ -2,23 +2,22 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Sortering {
-
+    static ArrayList<String> sorteringArrayList = new ArrayList<>();
 
     public static void main(String[] args) {
-    printProblemDescription();
+     sorterProblem1();
     }
-
     //problembeskrivelse
     private final static String problemDescription = "Skriv en metode, der indlæser 5 tekststrenge fra tastaturet og udskriver dem på skærmen i alfabetisk faldende orden på skærmen";
-    Scanner sorteringsScanner = new Scanner(System.in);
-
 
     //metode til at printe problembeskrivelse
+
     public static void printProblemDescription(){
         System.out.println(problemDescription);
-    }
+        }
 
-    public String sorterProblemet(){
+    public static void sorterProblemet(){
+        Scanner sorteringsScanner = new Scanner(System.in);
         System.out.println("Indtast 5 ord");
         String firstWord = sorteringsScanner.nextLine();
         String secondWord = sorteringsScanner.nextLine();
@@ -26,14 +25,21 @@ public class Sortering {
         String fourthWord = sorteringsScanner.nextLine();
         String fifthWord = sorteringsScanner.nextLine();
 
-        ArrayList<String> sorteringArrayList = new ArrayList<>();
-        sorteringArrayList.add(firstWord);
+
+        sorteringArrayList.add(sorteringsScanner.nextLine());
+
         sorteringArrayList.add(secondWord);
         sorteringArrayList.add(thirdWord);
         sorteringArrayList.add(fourthWord);
         sorteringArrayList.add(fifthWord);
-
-        return sorterProblemet();
+        System.out.println(sorteringArrayList);
+    }
+    public static void sorterProblem1(){
+        Scanner sorteringsScanner = new Scanner(System.in);
+        System.out.println("Type 5 Strings");
+            if (sorteringArrayList.size() = "")
+        sorteringArrayList.add(sorteringsScanner.nextLine());
+        System.out.println(sorteringArrayList);
     }
 
 }
