@@ -6,6 +6,8 @@ public class Main {
 
 
         // Method check SearchArrayList
+        SearchArrayList.printProblemDescription();
+
         ArrayList<String> list = new ArrayList<>();
         list.add("one");
         list.add("two");
