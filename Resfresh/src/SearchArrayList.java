@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class SearchArrayList {
 
@@ -7,19 +6,15 @@ public class SearchArrayList {
 
         boolean flag = false;
 
-        for(String element : listToCheck) {
+        if (listToCheck.contains(stringToCheck)) {
 
-            if (element.contains(stringToCheck)) {
+            flag = true;
 
-                flag = true;
+            System.out.println("The string has been found");
+        }
 
-                System.out.println("The string has been found");
-
-            }
-
-            else {
-                listToCheck.add(stringToCheck);
-            }
+        else {
+            listToCheck.add(stringToCheck);
         }
 
 
