@@ -1,6 +1,8 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Sortering {
+
 
     public static void main(String[] args) {
     printProblemDescription();
@@ -23,6 +25,13 @@ public class Sortering {
         String thirdWord = sorteringsScanner.nextLine();
         String fourthWord = sorteringsScanner.nextLine();
         String fifthWord = sorteringsScanner.nextLine();
+
+        ArrayList<String> sorteringArrayList = new ArrayList<>();
+        sorteringArrayList.add(firstWord);
+        sorteringArrayList.add(secondWord);
+        sorteringArrayList.add(thirdWord);
+        sorteringArrayList.add(fourthWord);
+        sorteringArrayList.add(fifthWord);
 
         return sorterProblemet();
     }
