@@ -1,5 +1,9 @@
 public class Kvadrat {
 
+    static String problemDescription = "Skriv en metode, der som parameter modtager et heltal. " +
+            "Metoden skal udskrive et kvadrat på skærmen svarende til heltallet. " +
+            "Udvid metoden, så den også modtager et tegn, som er det tegn, somprintes på skærmen";
+
     public static void printSquare(int numberInput, String symbolInput){
 
         int sides = numberInput;
@@ -11,6 +15,10 @@ public class Kvadrat {
             }
             System.out.println("");
         }
+    }
+
+    public static void printProblemDescription(){
+        System.out.println(problemDescription);
     }
 
 }
