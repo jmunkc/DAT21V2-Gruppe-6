@@ -27,19 +27,29 @@ public class Sortering {
         String fifthWord = sorteringsScanner.nextLine();
 
 
-        sorteringArrayList.add(sorteringsScanner.nextLine());
 
+        sorteringArrayList.add(firstWord);
         sorteringArrayList.add(secondWord);
         sorteringArrayList.add(thirdWord);
         sorteringArrayList.add(fourthWord);
         sorteringArrayList.add(fifthWord);
+        Collections.sort(sorteringArrayList);
+        System.out.println(sorteringArrayList);
+        Collections.reverse(sorteringArrayList);
         System.out.println(sorteringArrayList);
     }
     public static void sorterProblem1(){
         Scanner sorteringsScanner = new Scanner(System.in);
         System.out.println("Type 5 Strings");
-        sorteringArrayList.add(sorteringsScanner.nextLine());
+
+        for (int i = 0; i < 5; i++){
+            sorteringArrayList.add(sorteringsScanner.nextLine());
+        }
+        System.out.println("This is your chosen Strings in alphabetical order");
         Collections.sort(sorteringArrayList);
+        System.out.println(sorteringArrayList);
+        System.out.println("This is your chosen Strings in reversed alphabetical order");
+        Collections.reverse(sorteringArrayList);
         System.out.println(sorteringArrayList);
     }
 
