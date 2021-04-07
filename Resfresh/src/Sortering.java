@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Sortering {
@@ -37,8 +38,8 @@ public class Sortering {
     public static void sorterProblem1(){
         Scanner sorteringsScanner = new Scanner(System.in);
         System.out.println("Type 5 Strings");
-            if (sorteringArrayList.size() = "")
         sorteringArrayList.add(sorteringsScanner.nextLine());
+        Collections.sort(sorteringArrayList);
         System.out.println(sorteringArrayList);
     }
 
