@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class Sortering {
     static ArrayList<String> sorteringArrayList = new ArrayList<>();
 
-    public static void main(String[] args) {
-     sorterProblem1();
-    }
     //problembeskrivelse
     private final static String problemDescription = "Skriv en metode, der indlæser 5 tekststrenge fra tastaturet og udskriver dem på skærmen i alfabetisk faldende orden på skærmen";
 
@@ -19,7 +16,7 @@ public class Sortering {
 
     public static void sorterProblem1(){
         Scanner sorteringsScanner = new Scanner(System.in);
-        System.out.println("Type 5 Strings");
+        System.out.println("Type 5 Strings - First letter capital please");
         for (int i = 0; i < 5; i++){
             sorteringArrayList.add(sorteringsScanner.nextLine());
         }
