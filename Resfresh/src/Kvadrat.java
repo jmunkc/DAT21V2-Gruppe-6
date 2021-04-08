@@ -17,8 +17,8 @@ public class Kvadrat {
         }
     }
 
-    public static void printProblemDescription(){
-        System.out.println(problemDescription);
-    }
+    //public static void printProblemDescription(){
+      //  System.out.println(problemDescription);
+    //}
 
 }
